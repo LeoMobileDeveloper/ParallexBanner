@@ -11,6 +11,10 @@ import ParallexBanner
 
 class MainTableViewController:UITableViewController{
     let titles = ["Pure code","Storyboard","As TableView Header"]
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationItem.title = "Demo list"
+    }
     // MARK: - Delegate and dataSource -
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titles.count

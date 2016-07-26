@@ -29,7 +29,11 @@ public enum ParallexBannerTransition{
 
 public class ParallexBanner: UIView {
 // MARK: - Propertys -
-    public  weak var dataSource:ParallexBannerDataSource?
+    public  weak var dataSource:ParallexBannerDataSource?{
+        didSet{
+            reloadData()
+        }
+    }
     public  weak var delegate:ParallexBannerDelegate?
         /// The transitionMode when scroll,default is .Parallex
     public  var transitionMode:ParallexBannerTransition = ParallexBannerTransition.Parallex
@@ -109,15 +113,12 @@ public class ParallexBanner: UIView {
         flowLayout.itemSize = self.frame.size
         if let ds = self.dataSource{
             pageControl.numberOfPages = ds.numberOfBannersIn(self)
-            pageControl.hidden = false
         }else{
             pageControl.numberOfPages = 0
-            pageControl.hidden = true
         }
         pageControl.sizeToFit()
         collectionView.frame = self.bounds
         pageControl.center = CGPointMake(CGRectGetWidth(self.bounds)/2, CGRectGetHeight(self.bounds) - CGRectGetHeight(pageControl.bounds)/2)
-        reloadData()
     }
 // MARK: - API -
     public func reloadData(){
@@ -139,6 +140,7 @@ public class ParallexBanner: UIView {
             pageControl.numberOfPages = 0
             collectionView.reloadData()
         }
+        setNeedsLayout()
     }
 // MARK: - Life Circle -
     public override func willMoveToSuperview(newSuperview: UIView?) {

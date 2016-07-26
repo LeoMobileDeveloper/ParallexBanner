@@ -10,31 +10,44 @@ import Foundation
 import UIKit
 import ParallexBanner
 
+func delay(delay:Double, closure:()->()) {
+    dispatch_after(
+        dispatch_time(
+            DISPATCH_TIME_NOW,
+            Int64(delay * Double(NSEC_PER_SEC))
+        ),
+        dispatch_get_main_queue(), closure)
+}
+
 class StoryboadViewController: UIViewController,ParallexBannerDelegate,ParallexBannerDataSource {
     
     @IBOutlet weak var banner: ParallexBanner!
+    var count = 1
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Storyboard"
         self.view.backgroundColor = UIColor.whiteColor()
         self.automaticallyAdjustsScrollViewInsets = false
 
         banner.delegate = self
         banner.dataSource = self
         banner.transitionMode = .Normal
-        banner.autoScroll = false
+        banner.autoScrollTimeInterval = 5.0
+        banner.enableScrollForSinglePage = false
+        
+        delay(3.0) { 
+            self.count = 3
+            self.banner.reloadData()
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     func banner(banner: ParallexBanner, urlOrImageAtIndex index: NSInteger) -> AnyObject {
         let image = UIImage(named: "p\(index).jpg")!
-        if index == 0{
-            return "http://img.blog.csdn.net/20160725214531068"
-        }else{
-            return image
-        }
+        return image
     }
     func numberOfBannersIn(bannner: ParallexBanner) -> NSInteger {
-        return 3
+        return count
     }
     func banner(banner: ParallexBanner, didClickAtIndex index: NSInteger) {
         print("Click \(index)")

@@ -13,6 +13,7 @@ class PureCodeViewController: UIViewController,ParallexBannerDelegate,ParallexBa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Pure code"
         self.view.backgroundColor = UIColor.whiteColor()
         let width = UIScreen.mainScreen().bounds.size.width;
         let height = width * 125.0/200.0;
