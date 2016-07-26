@@ -1,0 +1,6 @@
+framework module Pods_ParallexBanner_Tests {
+  umbrella header "Pods-ParallexBanner_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

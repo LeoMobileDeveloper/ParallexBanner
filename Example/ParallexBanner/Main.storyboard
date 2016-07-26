@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nLe-Pn-iWU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Main Table View Controller-->
+        <scene sceneID="adV-nq-wN9">
+            <objects>
+                <tableViewController id="MOc-aQ-kUt" customClass="MainTableViewController" customModule="ParallexBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="DwU-jm-JbJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="MOc-aQ-kUt" id="RQH-PF-LdH"/>
+                            <outlet property="delegate" destination="MOc-aQ-kUt" id="gz6-2r-eR7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="99M-6g-XXZ"/>
+                    <connections>
+                        <segue destination="Ay4-Bf-TkG" kind="show" identifier="segue" id="UGn-xd-icK"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OVE-wv-i8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1583" y="-93"/>
+        </scene>
+        <!--Storyboad View Controller-->
+        <scene sceneID="SjP-EZ-s7v">
+            <objects>
+                <viewController id="Ay4-Bf-TkG" customClass="StoryboadViewController" customModule="ParallexBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mC0-KU-ZkC"/>
+                        <viewControllerLayoutGuide type="bottom" id="cpl-LU-cbS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qgm-iE-ckH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IH9-jK-azb" customClass="ParallexBanner" customModule="ParallexBanner">
+                                <rect key="frame" x="0.0" y="64" width="600" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IH9-jK-azb" secondAttribute="height" multiplier="8:5" id="a2c-Ah-dnf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IH9-jK-azb" firstAttribute="top" secondItem="mC0-KU-ZkC" secondAttribute="bottom" id="AA4-Y1-4bZ"/>
+                            <constraint firstItem="IH9-jK-azb" firstAttribute="leading" secondItem="qgm-iE-ckH" secondAttribute="leading" id="D1J-kh-LtS"/>
+                            <constraint firstAttribute="trailing" secondItem="IH9-jK-azb" secondAttribute="trailing" id="Yv1-4Y-ea6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="banner" destination="IH9-jK-azb" id="d3i-fw-HxL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qPF-Sj-syv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2365" y="-93"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Ay-79-j9B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nLe-Pn-iWU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QZq-mv-YMi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MOc-aQ-kUt" kind="relationship" relationship="rootViewController" id="E95-Dp-H9V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="znJ-lQ-qOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771" y="-93"/>
+        </scene>
+    </scenes>
+</document>

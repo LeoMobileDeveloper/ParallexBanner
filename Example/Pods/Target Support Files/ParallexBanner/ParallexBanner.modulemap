@@ -1,0 +1,6 @@
+framework module ParallexBanner {
+  umbrella header "ParallexBanner-umbrella.h"
+
+  export *
+  module * { export * }
+}

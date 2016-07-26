@@ -1,0 +1,19 @@
+PODS:
+  - Kingfisher (2.4.2)
+  - ParallexBanner (0.1.0):
+    - Kingfisher
+
+DEPENDENCIES:
+  - ParallexBanner (from `../`)
+
+EXTERNAL SOURCES:
+  ParallexBanner:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Kingfisher: 05bf8d04408aaa70fcd2c8c81b9f1d0f1ad313dd
+  ParallexBanner: 7b39e5272f666fe9de0787b6c88dc888a66cc676
+
+PODFILE CHECKSUM: ac66f4d9cef0a35075dffaf388befd760a1173d5
+
+COCOAPODS: 1.0.0

@@ -1,0 +1,28 @@
+{
+  "name": "ParallexBanner",
+  "version": "0.1.0",
+  "summary": "A short description of ParallexBanner.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/ParallexBanner",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "leo": "leomobiledeveloper@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/ParallexBanner.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ParallexBanner/Classes/**/*",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "Kingfisher": [
+
+    ]
+  }
+}
