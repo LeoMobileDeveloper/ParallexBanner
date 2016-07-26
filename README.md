@@ -1,24 +1,23 @@
-# ParallexBanner
 
-[![CI Status](http://img.shields.io/travis/leo/ParallexBanner.svg?style=flat)](https://travis-ci.org/leo/ParallexBanner)
-[![Version](https://img.shields.io/cocoapods/v/ParallexBanner.svg?style=flat)](http://cocoapods.org/pods/ParallexBanner)
-[![License](https://img.shields.io/cocoapods/l/ParallexBanner.svg?style=flat)](http://cocoapods.org/pods/ParallexBanner)
-[![Platform](https://img.shields.io/cocoapods/p/ParallexBanner.svg?style=flat)](http://cocoapods.org/pods/ParallexBanner)
+# Introduction
 
-## Example
+ParallexBanner is a images banner with parallex scroll effect written by pure Swift 2.2
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+<img src="https://github.com/LeoMobileDeveloper/ParallexBanner/blob/master/ScreenShots/gif.gif?raw=true" width="300">
+
+## Features
+
+- [x] Support storyboard and pure code
+- [x] Support auto scroll
+- [x] Support infinite scroll
+- [x] WebImage (It use Kingfisher to load web image)
+- [x] Placeholder image
 
 ## Requirements
 
-## Installation
+- iOS 8
+- ARC
 
-ParallexBanner is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "ParallexBanner"
-```
 
 ## Author
 
