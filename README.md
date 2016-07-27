@@ -24,6 +24,14 @@ ParallexBanner is a banner with parallex scroll effect written by pure Swift.
 - iOS 8
 - ARC
 
+## Install
+
+Using CocoaPod
+
+```
+pod "ParallexBanner"
+```
+
 ## Getting start
 
 ParallexBanner use dataSource and delegate as main interface
