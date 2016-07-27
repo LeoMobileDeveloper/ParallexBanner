@@ -9,15 +9,15 @@
 Pod::Spec.new do |s|
   s.name             = 'ParallexBanner'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ParallexBanner.'
+  s.summary          = 'A banner to show images with parallex effect'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This is a banner to show images with parallex effect.It support both local and Web Image.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/ParallexBanner'
+  s.homepage         = 'https://github.com/LeoMobileDeveloper/ParallexBanner'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'leo' => 'leomobiledeveloper@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/ParallexBanner.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/LeoMobileDeveloper/ParallexBanner.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.source_files = 'ParallexBanner/Classes/**/*'
   s.frameworks = 'UIKit'

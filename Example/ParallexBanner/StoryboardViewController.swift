@@ -25,16 +25,16 @@ class StoryboadViewController: UIViewController,ParallexBannerDelegate,ParallexB
     var count = 1
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Storyboard"
+        self.navigationItem.title = "Auto reload after 3 seconds"
         self.view.backgroundColor = UIColor.whiteColor()
         self.automaticallyAdjustsScrollViewInsets = false
 
         banner.delegate = self
         banner.dataSource = self
         banner.transitionMode = .Normal
-        banner.autoScrollTimeInterval = 5.0
-        banner.enableScrollForSinglePage = false
-        
+        banner.autoScrollTimeInterval = 2.0
+        banner.enableScrollForSinglePage = true
+        banner.pageControl.hidesForSinglePage = false
         delay(3.0) { 
             self.count = 3
             self.banner.reloadData()

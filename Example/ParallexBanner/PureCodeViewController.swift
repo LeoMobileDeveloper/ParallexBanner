@@ -20,10 +20,10 @@ class PureCodeViewController: UIViewController,ParallexBannerDelegate,ParallexBa
         let frame = CGRectMake(0, 0, width, height)
         let banner = ParallexBanner(frame: frame)
         self.automaticallyAdjustsScrollViewInsets = false
-        self.view.addSubview(banner)
         banner.delegate = self
         banner.dataSource = self
         banner.center = self.view.center
+        self.view.addSubview(banner)
         // Do any additional setup after loading the view, typically from a nib.
     }
     

@@ -41,8 +41,7 @@ public class ParallexBanner: UIView {
     public  var autoScroll:Bool = true {
         didSet{
             if autoScroll{
-                stopTimerIfNecessory()
-                startTimer()
+                restartTimerIfNeeded()
             }else{
                 stopTimerIfNecessory()
             }
@@ -56,7 +55,7 @@ public class ParallexBanner: UIView {
     public  var autoScrollTimeInterval:NSTimeInterval = 3.0 {
         didSet{
             stopTimerIfNecessory()
-            startTimer()
+            restartTimerIfNeeded()
         }
     }
         /// The page Control
@@ -119,26 +118,27 @@ public class ParallexBanner: UIView {
         pageControl.sizeToFit()
         collectionView.frame = self.bounds
         pageControl.center = CGPointMake(CGRectGetWidth(self.bounds)/2, CGRectGetHeight(self.bounds) - CGRectGetHeight(pageControl.bounds)/2)
+        let originIndexPath = NSIndexPath(forItem: _currentIndex, inSection: 0)
+        if let ds = dataSource{
+            let targetCount = ds.numberOfBannersIn(self);
+            let needAdjust = targetCount > 1 || (targetCount == 1 && enableScrollForSinglePage)
+            if needAdjust{
+                collectionView.scrollToItemAtIndexPath(originIndexPath, atScrollPosition: .None, animated: false)
+            }
+        }
     }
 // MARK: - API -
     public func reloadData(){
         _currentIndex = 1;
+        collectionView.reloadData()
+        stopTimerIfNecessory()
         if let ds = self.dataSource{
             let targetCount = ds.numberOfBannersIn(self);
             pageControl.numberOfPages = targetCount
             pageControl.currentPage = 0
-            collectionView.reloadData()
-            if targetCount == 1 && enableScrollForSinglePage == false{
-                stopTimerIfNecessory()
-            }else{
-                let indexPath = NSIndexPath(forItem: _currentIndex, inSection: 0)
-                collectionView.setContentOffset(CGPointMake(CGRectGetWidth(self.bounds), 0), animated: false)
-                stopTimerIfNecessory()
-                startTimer()
-            }
+            restartTimerIfNeeded()
         }else{
             pageControl.numberOfPages = 0
-            collectionView.reloadData()
         }
         setNeedsLayout()
     }
@@ -153,9 +153,13 @@ public class ParallexBanner: UIView {
         stopTimerIfNecessory()
     }
 // MARK: - Private -
-    private func startTimer(){
+    private func restartTimerIfNeeded(){
+        return
         stopTimerIfNecessory()
         if  autoScroll == false {
+            return
+        }
+        if self.dataSource!.numberOfBannersIn(self) == 1 && enableScrollForSinglePage == false{
             return
         }
         self.timer = NSTimer(timeInterval: self.autoScrollTimeInterval, target: self, selector: #selector(ParallexBanner.scrollToNext), userInfo: nil, repeats: true)
@@ -231,18 +235,18 @@ extension ParallexBanner:UICollectionViewDataSource,UICollectionViewDelegate{
         guard autoScroll else{
             return;
         }
-        startTimer()
+        restartTimerIfNeeded()
     }
     public func scrollViewDidScroll(scrollView: UIScrollView) {
         var offSetX = scrollView.contentOffset.x
-        let width = CGRectGetWidth(scrollView.frame)
+        let width = CGRectGetWidth(scrollView.bounds)
         guard width != 0 else{
             return
         }
         if offSetX >= width * CGFloat(self.dataSource!.numberOfBannersIn(self) + 2 - 1){
             offSetX = width;
             scrollView.contentOffset = CGPointMake(offSetX,0);
-        }else if(offSetX <= 0 ){
+        }else if(offSetX < 0 ){
             offSetX = width * CGFloat(self.dataSource!.numberOfBannersIn(self) + 2 - 2);
             scrollView.contentOffset = CGPointMake(offSetX,0);
         }
