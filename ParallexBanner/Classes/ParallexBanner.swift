@@ -16,15 +16,15 @@ public enum ParallexBannerTransition{
     //Maybe I will add some transition in the future
 }
 @objc public protocol ParallexBannerDelegate {
-    optional func banner(_ banner:ParallexBanner,didClickAtIndex index:NSInteger)
-    optional func banner(_ banner:ParallexBanner,didScrollToIndex index:NSInteger)
+    optional func banner(banner:ParallexBanner,didClickAtIndex index:NSInteger)
+    optional func banner(banner:ParallexBanner,didScrollToIndex index:NSInteger)
 }
 
 @objc public protocol ParallexBannerDataSource{
-    func numberOfBannersIn(_ bannner:ParallexBanner)->NSInteger
-    func banner(_ banner:ParallexBanner,urlOrImageAtIndex index:NSInteger)->AnyObject
-    optional func banner(_ banner:ParallexBanner,placeHolderForIndex index:NSInteger)->UIImage?
-    optional func banner(_ banner:ParallexBanner,contentModeAtIndex index:NSInteger)->UIViewContentMode
+    func numberOfBannersIn(bannner:ParallexBanner)->NSInteger
+    func banner(banner:ParallexBanner,urlOrImageAtIndex index:NSInteger)->AnyObject
+    optional func banner(banner:ParallexBanner,placeHolderForIndex index:NSInteger)->UIImage?
+    optional func banner(banner:ParallexBanner,contentModeAtIndex index:NSInteger)->UIViewContentMode
 }
 
 public class ParallexBanner: UIView {
@@ -154,7 +154,6 @@ public class ParallexBanner: UIView {
     }
 // MARK: - Private -
     private func restartTimerIfNeeded(){
-        return
         stopTimerIfNecessory()
         if  autoScroll == false {
             return

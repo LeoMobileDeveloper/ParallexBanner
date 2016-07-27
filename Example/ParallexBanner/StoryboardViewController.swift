@@ -31,11 +31,10 @@ class StoryboadViewController: UIViewController,ParallexBannerDelegate,ParallexB
 
         banner.delegate = self
         banner.dataSource = self
-        banner.transitionMode = .Normal
         banner.autoScrollTimeInterval = 2.0
-        banner.enableScrollForSinglePage = true
-        banner.pageControl.hidesForSinglePage = false
-        delay(3.0) { 
+//        banner.enableScrollForSinglePage = true
+//        banner.pageControl.hidesForSinglePage = false
+        delay(3.0) {
             self.count = 3
             self.banner.reloadData()
         }

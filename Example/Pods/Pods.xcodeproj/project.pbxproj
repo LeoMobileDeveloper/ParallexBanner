@@ -10,7 +10,6 @@
 		1B581F0C8CF5EEAE395515374FD683E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1E749E0C7E1A98F71C1A555A2011B3 /* Foundation.framework */; };
 		310A90FDC7A4108847C8DB448296EC9B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499434C2445A6D131CAD3B53CA034EF /* Image.swift */; };
 		32ABD43D364C9C8FCCE029D04D09209E /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926689AF2AC93193219D12354791BB0A /* UIButton+Kingfisher.swift */; };
-		36C5DD34D9ECF6B2D1586C0D46194092 /* Pods-ParallexBanner_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEFF4EA2FA79FD04ABC64F70F5C4A5B8 /* Pods-ParallexBanner_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E8FB8F421EF490807B09EFBA62FD286 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38C9AD9B0754CC053F5D7C700DD795 /* ImageCache.swift */; };
 		3FB4A1460429FE7B4C0E397309BCBCDF /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D39F10C4F726EC2E2D0021E2568412 /* Resource.swift */; };
 		432E087D0FB7BBBD518A79702D51B5A7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65B36E92D0FBE4B01B8D20A875F846F /* CFNetwork.framework */; };
@@ -21,7 +20,6 @@
 		6CCB53483D7BB0111F00EFF041246087 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE62EDB82ECE15B9B8E343EA9376717B /* Kingfisher.framework */; };
 		7158FC9012D51618F35A66E080674344 /* ParallexBanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A76E38DF98BE5C3501726490EB79090E /* ParallexBanner-dummy.m */; };
 		72E1B5591824D32038BD38C0A1A0090C /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D339252A758D0403A0CAA0A130BA6 /* ImagePrefetcher.swift */; };
-		802640681CFBD9282ED06F52DCB86155 /* Pods-ParallexBanner_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E75D74027F7C1F23ADD94DBF67B183 /* Pods-ParallexBanner_Tests-dummy.m */; };
 		841AF3229990A74085C9EA1595715634 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1E749E0C7E1A98F71C1A555A2011B3 /* Foundation.framework */; };
 		8B24ECCCF1CD0B0AEE746EC3F915DD2A /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997698CFECB4FA0374E9DCE87BE69143 /* ImageView+Kingfisher.swift */; };
 		92B58E5A6CBE8D8BE77252C768AE4CCF /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E27D322B916F140A78AD1BE71EA31 /* KingfisherManager.swift */; };
@@ -29,7 +27,6 @@
 		9C66E71E39965349D16D84946D52B074 /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465B870F7E50E381295CF377CC935AB /* ThreadHelper.swift */; };
 		9D656227705F46E46796EAAE4AAAFF09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1E749E0C7E1A98F71C1A555A2011B3 /* Foundation.framework */; };
 		B269CF8D2FE78AB70482D446509BC26D /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED96B7665527B0BDA27F6EAA25ED8CF5 /* KingfisherOptionsInfo.swift */; };
-		BAE0A2FB326DAE0DDD8690D228ADA51C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1E749E0C7E1A98F71C1A555A2011B3 /* Foundation.framework */; };
 		CEC7C23226EA400A86338DC8BB6D8B42 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3719D66E0E7937368BC3E102CE7E432B /* ImageTransition.swift */; };
 		D0275BC9E482FB67DC403279B3361101 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27B6F9869A2F0C72F994F9D13D8CF41 /* UIKit.framework */; };
 		D17359C1A58D7E4B9A94408368186D89 /* Pods-ParallexBanner_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDB34A9631550F65B61097571377997 /* Pods-ParallexBanner_Example-dummy.m */; };
@@ -98,7 +95,6 @@
 		969FC0A328403445B5AE24AE5AF30BB4 /* Pods-ParallexBanner_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParallexBanner_Example.release.xcconfig"; sourceTree = "<group>"; };
 		997698CFECB4FA0374E9DCE87BE69143 /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
 		9D746AFD0BB48E92D0FF8689AD534FDF /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
-		A02AB572B3B0E2C7386747407A776E73 /* Pods_ParallexBanner_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParallexBanner_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A465B870F7E50E381295CF377CC935AB /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Sources/ThreadHelper.swift; sourceTree = "<group>"; };
 		A65B36E92D0FBE4B01B8D20A875F846F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		A76E38DF98BE5C3501726490EB79090E /* ParallexBanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ParallexBanner-dummy.m"; sourceTree = "<group>"; };
@@ -123,14 +119,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6E02560746A54B262EDB39B5EB3EAF58 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BAE0A2FB326DAE0DDD8690D228ADA51C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		ADDB1DD55844EB6E1DE37C768F15DD87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,7 +253,6 @@
 				03E04120C03AFC1B0049ABB3CE902D87 /* Kingfisher.framework */,
 				9637B14E2F4518B3A305C733CB851C35 /* ParallexBanner.framework */,
 				74A01ADAEE791A6FEE8D3437BFA322A1 /* Pods_ParallexBanner_Example.framework */,
-				A02AB572B3B0E2C7386747407A776E73 /* Pods_ParallexBanner_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -351,14 +338,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A716BE1804B23421DE85125CA7460D0B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				36C5DD34D9ECF6B2D1586C0D46194092 /* Pods-ParallexBanner_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E96CDE979DAE70448A8668F3B245E185 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,23 +395,6 @@
 			productReference = 9637B14E2F4518B3A305C733CB851C35 /* ParallexBanner.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7E6FB8FFE1E6ACD2272737FE2B7173A1 /* Pods-ParallexBanner_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E5CFF5FDD11AEFEBFC5EE2B69D7FAFC9 /* Build configuration list for PBXNativeTarget "Pods-ParallexBanner_Tests" */;
-			buildPhases = (
-				4FBDFED9D517623829E5FE6042F7A537 /* Sources */,
-				6E02560746A54B262EDB39B5EB3EAF58 /* Frameworks */,
-				A716BE1804B23421DE85125CA7460D0B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-ParallexBanner_Tests";
-			productName = "Pods-ParallexBanner_Tests";
-			productReference = A02AB572B3B0E2C7386747407A776E73 /* Pods_ParallexBanner_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		E96E13C4D3B5B5FC0651440734C2BF4D /* Kingfisher */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE100A75D77110F0B5F48388F5128232 /* Build configuration list for PBXNativeTarget "Kingfisher" */;
@@ -474,20 +436,11 @@
 				E96E13C4D3B5B5FC0651440734C2BF4D /* Kingfisher */,
 				4370F05BAD60E830299E67DB3E7B6FEC /* ParallexBanner */,
 				20F7242BD286D4A96976390B4B78B195 /* Pods-ParallexBanner_Example */,
-				7E6FB8FFE1E6ACD2272737FE2B7173A1 /* Pods-ParallexBanner_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4FBDFED9D517623829E5FE6042F7A537 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				802640681CFBD9282ED06F52DCB86155 /* Pods-ParallexBanner_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BFE7FAAEF1C8254C9227FD5C624328C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -587,39 +540,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		19EB0CA7EF71B27C1292549A8255FC8A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2C375C584989DE4385A4B7ABCC5ABAE /* Pods-ParallexBanner_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ParallexBanner_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ParallexBanner_Tests/Pods-ParallexBanner_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ParallexBanner_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		294BDF1C43327E9F352EEE5F65016F5C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -814,39 +734,6 @@
 			};
 			name = Debug;
 		};
-		DBB24994A3221864B6A6CD95E6FEB261 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B6A99CA5A93D3FEC17B7946543604F1 /* Pods-ParallexBanner_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ParallexBanner_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ParallexBanner_Tests/Pods-ParallexBanner_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ParallexBanner_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		E0343D6E9AC5416637A0C4927FA238A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 37E553B55F89DDC7870A8E9DEDD39132 /* Pods-ParallexBanner_Example.debug.xcconfig */;
@@ -916,15 +803,6 @@
 			buildConfigurations = (
 				294BDF1C43327E9F352EEE5F65016F5C /* Debug */,
 				8CAEBA8AAC3E2804864DFBE6C1D6ACE1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E5CFF5FDD11AEFEBFC5EE2B69D7FAFC9 /* Build configuration list for PBXNativeTarget "Pods-ParallexBanner_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				19EB0CA7EF71B27C1292549A8255FC8A /* Debug */,
-				DBB24994A3221864B6A6CD95E6FEB261 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
