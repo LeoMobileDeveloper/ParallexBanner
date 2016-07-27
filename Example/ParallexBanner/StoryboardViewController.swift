@@ -22,7 +22,7 @@ func delay(delay:Double, closure:()->()) {
 class StoryboadViewController: UIViewController,ParallexBannerDelegate,ParallexBannerDataSource {
     
     @IBOutlet weak var banner: ParallexBanner!
-    var count = 1
+    var count = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Auto reload after 3 seconds"

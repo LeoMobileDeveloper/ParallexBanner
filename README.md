@@ -1,16 +1,22 @@
+# ParallexBanner
 
-# Introduction
+ [![Version](https://img.shields.io/cocoapods/v/ParallexBanner.svg?style=flat)](http://cocoapods.org/pods/ParallexBanner)  [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
+)](https://developer.apple.com/iphone/index.action)
+ [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
+)](https://developer.apple.com/swift)
+ [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
+)](http://mit-license.org)
 
-ParallexBanner is a images banner with parallex scroll effect written by pure Swift 2.2
+ParallexBanner is a banner with parallex scroll effect written by pure Swift.
 
-<img src="https://github.com/LeoMobileDeveloper/ParallexBanner/blob/master/ScreenShots/gif.gif?raw=true" width="300">
+<img src="https://github.com/LeoMobileDeveloper/ParallexBanner/blob/master/ScreenShots/gif.gif?raw=true" width="200">
 
 ## Features
 
-- [x] Support storyboard and pure code
-- [x] Support auto scroll
-- [x] Support infinite scroll
-- [x] WebImage (It use Kingfisher to load web image)
+- [x] Storyboard and pure code layout
+- [x] Auto scroll
+- [x] Infinite scroll
+- [x] WebImage and local image (It use Kingfisher to load web image)
 - [x] Placeholder image
 
 ## Requirements
@@ -20,7 +26,7 @@ ParallexBanner is a images banner with parallex scroll effect written by pure Sw
 
 ## Getting start
 
-ParallexBanner use dataSource and delegate
+ParallexBanner use dataSource and delegate as main interface
 
 Data Source
 

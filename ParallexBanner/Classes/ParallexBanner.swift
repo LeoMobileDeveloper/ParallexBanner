@@ -158,7 +158,11 @@ public class ParallexBanner: UIView {
         if  autoScroll == false {
             return
         }
-        if self.dataSource!.numberOfBannersIn(self) == 1 && enableScrollForSinglePage == false{
+        let count = self.dataSource!.numberOfBannersIn(self)
+        guard count != 0 else{
+            return
+        }
+        if count == 1 && enableScrollForSinglePage == false{
             return
         }
         self.timer = NSTimer(timeInterval: self.autoScrollTimeInterval, target: self, selector: #selector(ParallexBanner.scrollToNext), userInfo: nil, repeats: true)
@@ -187,6 +191,9 @@ extension ParallexBanner:UICollectionViewDataSource,UICollectionViewDelegate{
             return 0
         }
         let count = self.dataSource!.numberOfBannersIn(self);
+        guard count != 0 else{
+            return 0
+        }
         if count == 1 && enableScrollForSinglePage == false{
             return count;
         }
